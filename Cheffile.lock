@@ -1,0 +1,51 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    apache2 (1.8.14)
+    apt (2.3.0)
+    build-essential (1.4.2)
+    openssl (1.1.0)
+    php (1.2.6)
+      build-essential (>= 0.0.0)
+      mysql (>= 0.0.0)
+      xml (>= 0.0.0)
+    user (0.3.0)
+    xml (1.2.0)
+      build-essential (>= 0.0.0)
+
+GIT
+  remote: https://github.com/tcroiset/chef-phpmyadmin.git
+  ref: master
+  sha: 4d9c05d3c3b6498a93facc583381ff42344c324e
+  specs:
+    phpmyadmin (0.1.0)
+      php (>= 0.0.0)
+
+GIT
+  remote: https://github.com/tcroiset/mysql.git
+  ref: master
+  sha: d5e5d5bec9df8cf2f7a6c3acbd0154bbfded6f1c
+  specs:
+    mysql (4.0.7)
+      build-essential (~> 1.4)
+      openssl (~> 1.1)
+
+GIT
+  remote: https://github.com/tcroiset/postfix.git
+  ref: master
+  sha: 9388dc95cdb59ed4935924740721c7ef1a6ae164
+  specs:
+    postfix (3.0.4)
+
+DEPENDENCIES
+  apache2 (>= 0)
+  apt (>= 0)
+  build-essential (>= 0)
+  mysql (>= 0)
+  openssl (>= 0)
+  php (>= 0)
+  phpmyadmin (>= 0)
+  postfix (>= 0)
+  user (>= 0)
+  xml (>= 0)
+

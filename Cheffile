@@ -1,1 +1,11 @@
 site 'http://community.opscode.com/api/v1'
+cookbook 'build-essential'
+cookbook 'xml'
+cookbook 'apt'
+cookbook 'openssl'
+cookbook 'apache2'
+cookbook 'mysql', :git => "https://github.com/tcroiset/mysql.git"
+cookbook 'php'
+cookbook 'postfix', :git => "https://github.com/tcroiset/postfix.git"
+cookbook 'phpmyadmin', :git => "https://github.com/tcroiset/chef-phpmyadmin.git"
+cookbook 'user'

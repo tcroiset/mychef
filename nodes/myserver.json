@@ -1,0 +1,32 @@
+{
+    "postfix": {
+      "mail_type": "client",
+      "main": {
+        "mynetworks": [ "127.0.0.0/8" ],
+        "inet-interfaces": "loopback-only",
+	"relayhost": ""
+       }
+    },
+    "mysql": {
+        "server_root_password": "mypassword",
+        "server_repl_password": "mypassword",
+        "server_debian_password": "mypassword"
+    },
+    "users": [ "velib"],
+    "run_list":[
+    "recipe[build-essential]",
+    "recipe[xml]",
+    "recipe[apt]",
+    "recipe[openssl]",
+    "recipe[apache2]",
+    "recipe[apache2::mod_php5]",
+    "recipe[apache2::mod_rewrite]",
+    "recipe[mysql::client]",
+    "recipe[mysql::server]",
+    "recipe[php]",
+    "recipe[php::module_mysql]",
+    "recipe[php::module_curl]",
+    "recipe[postfix]",
+    "recipe[phpmyadmin]",
+    "recipe[user::data_bag]"
+]}
